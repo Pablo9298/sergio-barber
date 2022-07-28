@@ -1,0 +1,18 @@
+//подключение базовых стилей
+@import 'common/vars';
+@import 'common/fonts';
+@import 'common/reset';
+@import 'common/libs';
+@import 'common/global';
+
+
+//подключение компонентов
+@import 'components/burger';
+
+//header
+@import '_header.scss'
+
+//main
+
+
+//footer

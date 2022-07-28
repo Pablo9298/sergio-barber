@@ -1,0 +1,25 @@
+// Burger
+$burgerWidth: 40px;
+$burgerHeight: 25px;
+$burgerLineHeight: 2px;
+$burgerColor: #363853;
+
+// Colores
+$black: #000;
+$white: #fff;
+
+@mixin line-clamp($lines: 1) {
+  @if $lines <=1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  }
+}
