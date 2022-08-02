@@ -50,3 +50,12 @@ body.lock {
   letter-spacing: 5px;
   text-shadow: 2px 2px 5px;
 }
+
+.logo {
+  margin-right: 10px;
+  transition: box-shadow 0.5s;
+
+  &:hover {
+    box-shadow: 6px -3px 11px #cb4747;
+  }
+}
