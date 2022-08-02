@@ -1,6 +1,6 @@
 .about {
   background: linear-gradient(182deg, #765c5c, transparent);
-  padding: 95px 0;
+  padding: 70px 0;
 
   &__title {
     text-align: center;
@@ -15,28 +15,40 @@
 
   &__img {
     max-width: 400px;
-    margin-right: 100px;
+    margin-right: 50px;
     box-shadow: 10px 10px 10px 0px #0e0d0d;
   }
 
   &__text {
     max-width: 400px;
     position: relative;
-
+    
     &:after {
       content: "";
       position: absolute;
       bottom: -25px;
-      right: -20px;
+      right: 15px;
       background-image: url('../images/decor.svg');
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
       width: 131px;
       height: 160px;
-      opacity: 0.6;
       transform: rotate(21deg);
+      animation-duration: 3s;
+      animation-name: opacity;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
     }
   }
 }
 
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.6;
+  }
+}

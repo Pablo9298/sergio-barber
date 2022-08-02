@@ -39,7 +39,7 @@ $(function () {
 
 });
 
-let radius = 240;
+let radius = 150;
 let autoRotate = true;
 let rotateSpeed = -60;
 let imgWidth = 140;
@@ -52,8 +52,8 @@ let aImg = ospin.getElementsByTagName("a");
 ospin.style.width = imgWidth + "px";
 ospin.style.height = imgHeight + "px";
 let ground = document.getElementById("ground");
-ground.style.width = radius * 3 + "px";
-ground.style.height = radius * 3 + "px";
+ground.style.width = radius * 1 + "px";
+ground.style.height = radius * 1 + "px";
 
 function init(delayTime) {
   for (let i = 0; i < aImg.length; i++) {
