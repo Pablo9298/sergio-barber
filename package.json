@@ -9,6 +9,7 @@
   "author": "Pavlo Biiuts",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.4.1",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",

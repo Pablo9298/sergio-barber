@@ -25,6 +25,27 @@
   &__slider {
     margin-top: 100px;
   }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    margin: 0 auto;
+    background-color: rgba(255, 0, 0, .1294117647);
+    box-shadow: inset -1px 1px 11px 0px;
+    position: relative;
+    transition: all .5s;
+    margin-top: 30px;
+
+    &:hover {
+      background-color: rgb(255 0 0 / 40%);
+      letter-spacing: 3px;
+      border-radius: 2px;
+    }
+  }
 }
 
 #carousel {
@@ -58,7 +79,7 @@
 #drag-container img {
   width: 100%;
   height: 100%;
-  filter: grayscale(50%) contrast(0.8);
+  filter: grayscale(1) contrast(0.8);
   transition: filter 0.3s;
 }
 
@@ -76,7 +97,7 @@
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%) rotateX(90deg);
-  color: #337AB7;
+  color: #eb616152;
   font-family: Verdana, sans-serif;
 }
 

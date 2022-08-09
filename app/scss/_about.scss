@@ -20,7 +20,7 @@
   }
 
   &__text {
-    max-width: 400px;
+    max-width: 500px;
     position: relative;
     
     &:after {
@@ -35,7 +35,7 @@
       width: 131px;
       height: 160px;
       transform: rotate(21deg);
-      animation-duration: 3s;
+      animation-duration: 2s;
       animation-name: opacity;
       animation-iteration-count: infinite;
       animation-direction: alternate;

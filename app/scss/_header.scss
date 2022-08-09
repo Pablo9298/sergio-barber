@@ -48,6 +48,31 @@
     }
   }
 
+  &__list {
+    display: flex;
+  }
+
+  &__item-language {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color 0.5s, text-shadow 0.5s;
+
+    &:hover {
+      color: #c54848c7;
+      text-shadow: 2px 1px 5px #c33c3c;
+    }
+
+    & span {
+      color: #fff;
+      text-shadow: none;
+    }
+
+    .language-est {
+      margin-left: 5px;
+    }
+  }
+
   &__burger {
     display: none;
   }
@@ -86,18 +111,42 @@
   &__mail {
     display: inline-block;
     color: $white;
-    padding: 10px 25px;
+    padding: 10px 10px 10px 30px;
     background-color: #ff000021;
     box-shadow: inset -1px 1px 11px 0px;
+    position: relative;
     transition: all 0.5s;
 
     &:hover {
       background-color: rgb(255 0 0 / 40%);
       letter-spacing: 3px;
     }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 12px;
+      width: 15px;
+      height: 15px;
+      transition: transform 0.5s;
+    }
+
+    &:hover:before {
+      transform: rotate(20deg);
+    }
   }
 
   &__tel {
     margin-right: 20px;
+  }
+
+  &__tel:before {
+
+    background-image: url('../images/icons/phone.svg');
+  }
+
+  &__mail:before {
+    background-image: url('../images/icons/mail.svg');
   }
 }

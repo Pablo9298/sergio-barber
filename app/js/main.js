@@ -1,5 +1,6 @@
 $(function () {
 
+
   var headerTop = $('.header__top, .header__link');
   var doc = $(document);
 
