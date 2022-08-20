@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 12;
 
     &.scrolled {
       background-color: #000000a1;
@@ -36,7 +36,7 @@
 
   &__link {
     display: block;
-    color: $white;
+    color: #fff;
     padding: 40px 15px 15px 15px;
     height: 100px;
     border-radius: 0 0 5px 5px;
@@ -86,7 +86,7 @@
   &__title {
     font-size: 50px;
     max-width: 1003px;
-    color: white;
+    color: #fff;
     line-height: 1.3;
     letter-spacing: 0.1em;
     margin: auto 0 60px;
@@ -110,7 +110,7 @@
   &__tel,
   &__mail {
     display: inline-block;
-    color: $white;
+    color: #fff;
     padding: 10px 10px 10px 30px;
     background-color: #ff000021;
     box-shadow: inset -1px 1px 11px 0px;
@@ -148,5 +148,98 @@
 
   &__mail:before {
     background-image: url('../images/icons/mail.svg');
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+
+    &__items {
+      position: fixed;
+      left: calc(50% - 222px/2);
+      top: -200%;
+      background-color: rgb(18 16 16 / 23%);
+      display: block;
+      padding: 25px 70px;
+      border: 5px solid #0a0a0a87;
+      border-radius: 10px;
+      transition: all .5s;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        backdrop-filter: blur(6px);
+      }
+
+      &--active {
+        top: 75px;
+      }
+    }
+
+    &__item {
+      text-align: center;
+      position: relative;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      display: inline-block;
+      padding: 0;
+      height: 0;
+
+      &:hover {
+        padding: 0;
+      }
+    }
+
+    &__list {
+      margin: 0 0 0 auto;
+    }
+
+    &__burger {
+      display: block;
+      z-index: 10;
+      margin: 0 10px 0 30px;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .header {
+
+    &__title {
+      font-size: 35px;
+
+      & span {
+        font-size: inherit;
+        filter: blur(0)
+      }
+    }
+  }
+}
+
+@media (max-height: 670px) {
+  .header {
+
+    &__items--active {
+      top: 20px;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .header {
+
+    &__title {
+      font-size: 29px;
+    }
   }
 }

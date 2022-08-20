@@ -1,3 +1,8 @@
+$burgerWidth: 40px;
+$burgerHeight: 25px;
+$burgerLineHeight: 2px;
+$burgerColor: #fff;
+
 .burger {
   width: $burgerWidth;
   height: $burgerHeight;
@@ -6,10 +11,10 @@
 
   &__line {
     position: absolute;
-    left: 0;
+    left: calc(50% - 28px/2);
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    width: 70%;
     height: $burgerLineHeight;
     background-color: currentColor;
     transition: transform 0.3s ease-in-out;

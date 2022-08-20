@@ -1,6 +1,13 @@
 $(function () {
 
+  $('.star').rateYo({
+    starWidth: "16px",
+    ratedFill: "#f31515",
+    fullStar: true,
+    numStars: 5
+  });
 
+  
   var headerTop = $('.header__top, .header__link');
   var doc = $(document);
 
@@ -28,13 +35,13 @@ $(function () {
 
   $('.burger').on('click', function () {
     $('.burger').toggleClass('burger--active');
-    $('.header__list').toggleClass('header__list--active');
+    $('.header__items').toggleClass('header__items--active');
     $('body').toggleClass('lock');
   });
 
   $('.header__link, .header__logo').on('click', function () {
     $('.burger').removeClass('burger--active');
-    $('.header__list').removeClass('header__list--active');
+    $('.header__items').removeClass('header__items--active');
     $('body').removeClass('lock');
   });
 

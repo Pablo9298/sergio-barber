@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -37,11 +40,11 @@
           </li>
 
           <li class="header__item">
-            <a class="header__link" href="#">Отзывы</a>
+            <a class="header__link" href="#reviews">Отзывы</a>
           </li>
 
           <li class="header__item">
-            <a class="header__link" href="#">Контакты</a>
+            <a class="header__link" href="#contacts">Контакты</a>
           </li>
         </ul>
 
@@ -66,7 +69,7 @@
 
   <div class="header__container container">
     <h1 class="header__title">
-      Привет я Сергей , <br>
+      Привет я Сергей,<br>
       <span>barber профессионал</span>
     </h1>
 
@@ -91,7 +94,12 @@
     </h2>
 
     <div class="about__wrapper">
-      <img class="about__img" src="images/sergio.jpg" alt="Барбер Серджио">
+      <div class="about__box">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
       <p class="about__text">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero excepturi numquam possimus quibusdam commodi cumque delectus rem esse fugit nihil repudiandae perferendis autem neque veniam, itaque deserunt molestiae beatae. Temporibus!
@@ -100,6 +108,7 @@
     </div>
   </div>
 </section>
+
     <section class="works" style="background-image: url('images/worksbg.jpg');" id="works">
   <div class="container">
     <h3 class="works__title title">
@@ -132,12 +141,13 @@
       </div>
     </div>
 
-    <a href="#" class="works__link">
+    <a class="works__link" href="#">
       Все работы
     </a>
   </div>
 </section>
-    <section class="video" id="video">
+
+     <section class="video" id="video">
   <div class="container">
     <h3 class="video__title title">
       Мои видео
@@ -186,7 +196,8 @@
     </ul>
   </div>
 </section>
-    <section class="services" id="services">
+
+    <section class="services" style="background-image: url('images/servicesbg.jpg');" id="services">
   <div class="container">
     <h3 class="services__title title">
       Услуги
@@ -201,12 +212,79 @@
       При работе с клиентом мы используем только профессиональные парикмахерские инструменты и косметическую продукцию
       высшего класса.
     </p>
+
+    <ul class="services__items services__items-text">
+      <li class="services__item">
+        Услуга <span>Цена</span>
+      </li>
+
+      <li class="services__item">
+        Стрижка ножницами <span>50$</span>
+      </li>
+
+      <li class="services__item">
+        Стрижка машинкой (вся голова) <span>50$</span>
+      </li>
+
+      <li class="services__item">
+        Оформление бороды <span>50$</span>
+      </li>
+
+      <li class="services__item">
+        Детская стрижка (до 12 лет) <span>50$</span>
+      </li>
+
+      <li class="services__item">
+        Тонирование голова / борода <span>50$</span>
+      </li>
+    </ul>
   </div>
 </section>
 
+    
+
   </main>
 
-  
+  <footer class="footer" id="contacts">
+  <div class="container">
+    <h3 class="footer__title title">
+      Мои контакты
+    </h3>
+      
+      <ul class="footer__items">
+        <li class="footer__item" style="--clr:#1877f2;">
+          <a class="footer__link" href="#" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </li>
+
+        <li class="footer__item" style="--clr:#ff0000;">
+          <a class="footer__link" href="#" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+
+        <li class="footer__item" style="--clr:#1da1f2;">
+          <a class="footer__link" href="#" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+
+        <li class="footer__item" style="--clr:#c32aa3;">
+          <a class="footer__link" href="#" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+
+        <li class="footer__item" style="--clr:#25d366;">
+          <a class="footer__link" href="#" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </li>
+      </ul>
+
+  </div>
+</footer>
 
   <script src="js/main.min.js"></script>
 </body>
