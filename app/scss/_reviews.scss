@@ -167,3 +167,21 @@
     }
   }
 }
+
+@media (max-width: 750px) {
+  .form {
+
+    &__inner {
+      display: block;
+    }
+
+    &__box-textarea {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__box-input {
+      max-width: 100%;
+    }
+  }
+}

@@ -40,33 +40,52 @@
 
   &__item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: relative;
     font-size: 20px;
     color: #fff;
 
     &:first-child {
       font-size: 25px;
 
-      &::after {
+      & .services__price::before {
         display: none;
       }
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      right: 25%;
-      width: 10px;
-      height: 2px;
-      background-color: #ffffff;
     }
 
     &:not(:last-child) {
       margin-bottom: 15px;
       border-bottom: 1px solid #dd0f0f52;
       padding-bottom: 15px;
+    }
+  }
+
+  &__descr {
+    margin-right: 20px;
+  }
+
+  &__price {
+    margin: 0 0 0 auto;
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 50%;
+      width: 10px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .services {
+
+    &__descr,
+    &__price {
+      font-size: 15px;
     }
   }
 }
